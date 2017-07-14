@@ -1,0 +1,198 @@
+body{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.logo{
+
+}
+
+header{
+  width: 100%;
+  display:flex;
+  z-index: 1;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
+.navigation{
+  /*  better name tag can be used . fix later */
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+
+}
+
+.navigation span{
+  padding: 10px;
+
+}
+
+
+a {
+  color: white;
+ }
+
+.links{
+  /*text-decoration: underline;*/
+}
+
+.content{
+  /* This is the Parent that control behaviour of its children so they all dance together */
+  display: flex;
+  flex-direction: column;
+  /* these 2 items were added when adding the foodItems section*/
+  justify-content: center;
+  align-items: center;
+}
+
+.mission{
+  display: flex;
+  flex-direction: column;
+  /*background-image:  url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");*/
+  background-image: url("../../resources/images/img-mission-background.jpg");
+
+  height: 700px;
+  width: 1200px;
+  /* this aligns objects along the center BUT vertically, since the main axis is flipped via flex direction*/
+  justify-content: center;
+}
+
+.missionStatement{
+  background-color: black;
+  display: flex;
+  /* thought this would have been inherited like justify content from class = .mission above. not sure why this? */
+  flex-direction: column;
+  /* this aligns objects along the center BUT vertically, since the main axis is flipped via flex direction*/
+  align-items: center;
+}
+
+.missionStatement h2{
+  margin: 10px;
+}
+
+h4{
+  margin: 10px;
+}
+
+
+.foodItems{
+  display: flex;
+  /* ----> using column method - this will work as well center and apply padding <------*/
+  /*
+  flex-direction: column;
+  justify-content: space-between;
+  */
+  /* ----> using flex wrap method <------*/
+  flex-wrap: wrap;
+  justify-content:center;
+
+  /* flex layout similar to class .mission */
+  width: 1000px;
+
+}
+
+.foodItemsText{
+  /* flex layout similar to class .missionStatement */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.foodItemsText h2{
+  padding-top: 50px;
+  margin: 10px;
+}
+
+.foodItem{
+  padding: 10px;
+
+}
+
+.row2{
+  display:flex;
+  /*justify-content: space-between;*/
+}
+
+.row3{
+  display:flex;
+  /*justify-content: space-between;*/
+}
+
+.foodItemContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-image: url("../../resources/images/img-berryblitz.jpg");*/
+}
+
+.locations{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  height: 550px;
+  width: 1200px;
+  opacity: 1;
+  margin-top: 50px;
+}
+
+.locationHeader{
+  display: flex;
+  justify-content: center;
+}
+
+.locationHeader h2{
+  margin-top: 80px;
+}
+
+.locationContent{
+  display: flex;
+  justify-content: center;
+
+}
+
+.locationSquare{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.locationSquareContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 1200px;
+}
+
+.copywrite{
+  display: flex;
+  margin-left: 20px;
+}
